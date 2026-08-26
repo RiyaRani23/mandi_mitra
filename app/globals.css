@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import './auth.css';
 @custom-variant dark (&:is(.dark *));
 @theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-border: var(--border); --font-sans: 'Inter', 'Noto Sans Devanagari', sans-serif; }
 :root { --background:#f8f8f3; --foreground:#173328; --primary:#1f6846; --primary-foreground:#fff; --cream:#f5f4eb; --ink:#173328; --muted:#60746a; --orange:#e88935; --border:#dfe7dc; --radius:1rem; }
