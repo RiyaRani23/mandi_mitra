@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { authClient } from '@/lib/auth-client'
 import { BuyerMarketplace } from '@/components/buyer-marketplace'
+import { FpoDashboard } from '@/components/fpo-dashboard'
 import { ArrowRight, Bell, Check, ChevronDown, CircleDollarSign, Leaf, LogOut, MapPin, Mic, Phone, Save, Truck, Users, WalletCards } from 'lucide-react'
 
 type Role = 'farmer' | 'buyer' | 'fpo'
@@ -18,6 +19,7 @@ const stages = ['Your Produce', 'Best Selling Option', 'Compare Options', 'Choos
 
 export function Dashboard({ role, name }: { role: Role; name: string }) {
   if (role === 'buyer') return <BuyerMarketplace name={name} />
+  if (role === 'fpo') return <FpoDashboard name={name} />
   if (role !== 'farmer') return <SimpleDashboard role={role} name={name} />
   const [stage, setStage] = useState(0)
   const [voice, setVoice] = useState(false)
