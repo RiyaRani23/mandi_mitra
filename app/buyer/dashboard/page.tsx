@@ -1,5 +1,6 @@
-import { headers } from 'next/headers'
-import { redirect } from 'next/navigation'
-import { auth } from '@/lib/auth'
 import { Dashboard } from '@/components/dashboard'
-export default async function BuyerDashboard() { const session = await auth.api.getSession({ headers: await headers() }); if (!session?.user) redirect('/login/buyer'); return <Dashboard role="buyer" name={session.user.name} /> }
+
+// Buyer marketplace is a self-contained SIH demo flow; the existing Farmer auth flow remains protected.
+export default function BuyerDashboard() {
+  return <Dashboard role="buyer" name="Buyer" />
+}
