@@ -7,21 +7,8 @@ export const metadata: Metadata = {
   description: 'Smart market connections and price discovery for India’s farmers, buyers, and FPOs.',
   generator: 'MandiMitra',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/mandimitra-favicon.svg',
+    apple: '/mandimitra-favicon.svg',
   },
 }
 

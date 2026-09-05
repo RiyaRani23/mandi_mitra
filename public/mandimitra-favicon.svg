@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">MandiMitra</title>
+  <desc id="desc">MandiMitra green leaf mark</desc>
+  <rect width="64" height="64" rx="16" fill="#1f6846"/>
+  <path d="M16 39c10-2 20-10 25-23 8 10 8 23 0 31-8 8-19 8-29 4 0-4 1-8 4-12Z" fill="#f5b164"/>
+  <path d="M16 51c6-11 14-19 25-27" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+</svg>
